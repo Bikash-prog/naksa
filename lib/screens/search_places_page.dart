@@ -9,7 +9,7 @@ import 'package:naksa/data_provider/appdata.dart';
 import 'package:naksa/helpers/requestHelper.dart';
 import 'package:naksa/supporter/Prediction_tile.dart';
 import 'package:provider/provider.dart';
-
+//Its the page which takes destination location to make the route
 class SearchPlacesPage extends StatefulWidget {
   static const id = 'search_place_screen';
 
