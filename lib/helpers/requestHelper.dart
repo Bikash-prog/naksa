@@ -2,6 +2,9 @@ import 'dart:convert';
 
 import 'package:http/http.dart' as http;
 
+//use of http : to connect api and to get the required things out of it
+//Response will be green (successful) while status code is 200
+
 class RequestHelper
 {
   static Future<dynamic> getRequest(String url) async{
