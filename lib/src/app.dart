@@ -6,6 +6,9 @@ import 'package:naksa/screens/home_screen.dart';
 import 'package:naksa/screens/map.dart';
 import 'package:naksa/screens/search_places_page.dart';
 import 'package:provider/provider.dart';
+
+
+//Material app's some of the custom features are here included
 Map<int, Color> color =
 {
   50:Color.fromRGBO(57,62,70,1),
