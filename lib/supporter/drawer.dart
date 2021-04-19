@@ -49,7 +49,7 @@ class _DrawerNavigationState extends State<DrawerNavigation> {
               child: Column(
                 children: [
                   Text(
-                    'Mr. X',
+                    'Bikash Bhuyan',
                     style: GoogleFonts.rubik(
                       textStyle: TextStyle(
                         fontSize: 20,
@@ -59,7 +59,7 @@ class _DrawerNavigationState extends State<DrawerNavigation> {
                     ),
                   ),
                   Text(
-                    'Mr. Y',
+                    'Ayush Verma',
                     style: GoogleFonts.rubik(
                       textStyle: TextStyle(
                         fontSize: 20,
@@ -69,7 +69,7 @@ class _DrawerNavigationState extends State<DrawerNavigation> {
                     ),
                   ),
                   Text(
-                    'Mr. Z',
+                    'Sarthak Kedia',
                     style: GoogleFonts.rubik(
                       textStyle: TextStyle(
                         fontSize: 20,
