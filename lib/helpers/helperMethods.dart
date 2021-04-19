@@ -12,6 +12,9 @@ import 'package:provider/provider.dart';
 
 class HelperMethods
 {
+
+  // Reverse geo - coding to retrieve the place data from google map api
+  // Calling instances of Address class to store the required data
   static Future<String> findAddressByCoordinates(Position position , context) async{
       String placeAddress ='';
       var connectivityChecker = await Connectivity().checkConnectivity();
@@ -36,6 +39,10 @@ class HelperMethods
         }
       return placeAddress;
   }
+
+  //A function to store direction data
+  // Calling an instance of DirectionDetails to store required data
+  //Function is taking responses of starting (origin) and ending point(destination) to get the details
 
   static Future<DirectionDetails> getDirectionDetails(LatLng startPosition, LatLng endPosition) async {
     String url = 'https://maps.googleapis.com/maps/api/directions/json?origin=${startPosition.latitude},${startPosition.longitude}&destination=${endPosition.latitude},${endPosition.longitude}&mode=driving&key=$mapApiKey';
