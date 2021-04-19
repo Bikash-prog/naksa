@@ -1,4 +1,8 @@
 
+
+// A class which will contain address details
+// like name of the place, its LatLng , placeID etc
+// We can call its instance whenever we need it
 class Address
 {
   String placeName;
