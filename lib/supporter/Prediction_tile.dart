@@ -8,7 +8,7 @@ import 'package:naksa/data_provider/appdata.dart';
 import 'package:naksa/helpers/requestHelper.dart';
 import 'package:provider/provider.dart';
 
-
+// Prediction Tile for search page means 2 by 2 (origin : current location and Destination : User choice) wala page ka
 class PredictionTile extends StatelessWidget {
 
   final Prediction prediction;
@@ -34,9 +34,13 @@ class PredictionTile extends StatelessWidget {
         Provider.of<AppData>(context, listen:  false).updateDestinationAddress(thisPlace);
 
         print(thisPlace.placeName);
+        // This response 'getDirection' should be send to
+        //Home Page so that it can make a route
         Navigator.pop(context , 'getDirection');
       }
   }
+
+  //foundation of each box of predicted places
 
   @override
   Widget build(BuildContext context) {
