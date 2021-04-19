@@ -400,6 +400,7 @@ class _MyAppState extends State<OurMap> {
   }
 }
 
+//Following are the coordinates of the main locations of our campus , which we marked in our map.
 Map<String, dynamic> coords = {
   "Hostels": [
     {
