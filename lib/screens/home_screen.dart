@@ -114,6 +114,8 @@ class _AddressNavigationState extends State<AddressNavigation> {
         },
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+
+
       body: Stack(
         children: [
           GoogleMap(
@@ -169,6 +171,7 @@ class _AddressNavigationState extends State<AddressNavigation> {
               child: Padding(
                 padding: EdgeInsets.symmetric(horizontal: 14),
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Row(
                       children: [
@@ -236,6 +239,8 @@ class _AddressNavigationState extends State<AddressNavigation> {
     ));
   }
 
+  // function which will take start location and end location from AppData Listener
+  // DirectionDetails class instance as tripDirectionDetails
   Future<void> getDirection() async {
     var startLocation =
         Provider.of<AppData>(context, listen: false).originAddress;
@@ -263,6 +268,7 @@ class _AddressNavigationState extends State<AddressNavigation> {
         polylineCoordinates.add(LatLng(point.latitude, point.longitude));
       });
     }
+    // So that previous one gets removed and new one appear when user calls one
     _polylines.clear();
     setState(() {
       Polyline polyline = Polyline(
@@ -343,3 +349,8 @@ class _AddressNavigationState extends State<AddressNavigation> {
     });
   }
 }
+
+// Polylines maker
+// Bounds of polylines
+// info window starting and ending marks and circles
+// All are here included
