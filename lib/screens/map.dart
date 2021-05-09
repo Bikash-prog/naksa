@@ -9,6 +9,8 @@ import 'package:naksa/constants/constant_colors.dart';
 import 'package:naksa/screens/home_screen.dart';
 import 'package:naksa/supporter/drawer.dart';
 
+//Below is the code for institute map page.
+
 int timesCalled = 0;
 //TODO ENTER YOUR OWN GOOGLE MAP API KEY TO RUN THE MAP IN YOUR DEVICE
 // ignore: must_be_immutable
@@ -65,7 +67,7 @@ class _MyAppState extends State<OurMap> {
   Color color = Colors.greenAccent;
   //map controller
   Completer<GoogleMapController> mapController = Completer();
-  //List of markers
+  //List of markers 
   List<Marker> _hostelMarkers = <Marker>[];
   List<Marker> _departmentMarkers = <Marker>[];
   List<Marker> _lectureHallMarkers = <Marker>[];
@@ -74,7 +76,7 @@ class _MyAppState extends State<OurMap> {
   List<Marker> _displayMarkers = <Marker>[];
 
   bool _selectedList = false;
-// initial map position
+// initial map position on inititute map
   CameraPosition _initialCameraPosition() {
     return CameraPosition(
       target: LatLng(25.267878, 82.990494),
@@ -83,7 +85,8 @@ class _MyAppState extends State<OurMap> {
       tilt: 0.0,
     );
   }
-
+  
+  
   moveCameraToMarker(Map coord) async {
     final GoogleMapController controller = await mapController.future;
     final _camera = CameraPosition(
@@ -96,7 +99,8 @@ class _MyAppState extends State<OurMap> {
       CameraUpdate.newCameraPosition(_camera),
     );
   }
-
+   
+  //code for shifting map focus to the chosen place.
   simpleMoveCameraToMarker(String latitude, String longitude) async {
     print('moving to ($latitude, $longitude)');
     final GoogleMapController controller = await mapController.future;
@@ -122,7 +126,8 @@ class _MyAppState extends State<OurMap> {
       onTap: () => moveCameraToMarker(coord),
     );
   }
-
+  
+  //we ever we open institute map page following code runs.
   void _onMapCreated(GoogleMapController controller) {
     mapController.complete(controller);
 
@@ -182,6 +187,7 @@ class _MyAppState extends State<OurMap> {
       });
   }
 
+  //the code for bottom navigation panel
   void _settingModalBottomSheet(context) {
     final container = (String title, Function setDisplayMarker) => Container(
       margin: EdgeInsets.all(3),
