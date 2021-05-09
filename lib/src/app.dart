@@ -7,7 +7,7 @@ import 'package:naksa/screens/map.dart';
 import 'package:naksa/screens/search_places_page.dart';
 import 'package:provider/provider.dart';
 
-
+//root of our app
 //Material app's some of the custom features are here included
 Map<int, Color> color =
 {
