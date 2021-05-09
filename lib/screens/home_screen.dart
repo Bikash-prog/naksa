@@ -13,7 +13,7 @@ import 'package:naksa/screens/search_places_page.dart';
 import 'package:naksa/supporter/drawer.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_polyline_points/flutter_polyline_points.dart';
-
+//code for the home screen of our app
 class HomeScreen extends StatefulWidget {
   static const id = 'home_screen';
 
@@ -57,8 +57,8 @@ class _AddressNavigationState extends State<AddressNavigation> {
     mapController.complete(controller);
     homeMapController = controller;
 
-    // as soon as current location is fetched get the new updated map
-    setUpCurrentPosition();
+    
+    setUpCurrentPosition(); // as soon as current location is fetched get the new updated map
   }
 
   Position currentPosition;
@@ -350,7 +350,3 @@ class _AddressNavigationState extends State<AddressNavigation> {
   }
 }
 
-// Polylines maker
-// Bounds of polylines
-// info window starting and ending marks and circles
-// All are here included
