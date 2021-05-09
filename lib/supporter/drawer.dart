@@ -4,6 +4,7 @@ import 'package:naksa/constants/constant_colors.dart';
 import 'package:naksa/screens/distance_matrix_page.dart';
 import 'package:naksa/screens/map.dart';
 
+//Below is the code for the drawer which acts as a navigation bar.
 class DrawerNavigation extends StatefulWidget {
   @override
   _DrawerNavigationState createState() => _DrawerNavigationState();
