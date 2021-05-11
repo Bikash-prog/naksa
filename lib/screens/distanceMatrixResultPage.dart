@@ -46,7 +46,7 @@ class _DmResultPageState extends State<DmResultPage> {
                     child: Column(
                       children: [
                         Text(
-                          'BHU - 25.2677° N, 82.9913° E',
+                          'Gymkhana  - 25.259643° N, 82.988997° E',
                           style: GoogleFonts.rubik(
                             textStyle: TextStyle(
                               fontSize: 14,
@@ -125,7 +125,7 @@ class _DmResultPageState extends State<DmResultPage> {
                               children: [
                                 Text(
                                   (d2 != null)?
-                                  d2.distanceText: '3.9 mi',
+                                  d2.distanceText: '0 mi',
                                   style: GoogleFonts.rubik(
                                     textStyle: TextStyle(
                                       fontSize: 12,
@@ -136,7 +136,7 @@ class _DmResultPageState extends State<DmResultPage> {
                                 ),
                                 Text(
                                   (d2 != null)?
-                                  d2.durationText: '23 min',
+                                  d2.durationText: '0 min',
                                   style: GoogleFonts.rubik(
                                     textStyle: TextStyle(
                                       fontSize: 12,
@@ -159,7 +159,7 @@ class _DmResultPageState extends State<DmResultPage> {
                               children: [
                                 Text(
                                   (d3 != null)?
-                                  d3.distanceText: '6.2 mi',
+                                  d3.distanceText: '0 mi',
                                   style: GoogleFonts.rubik(
                                     textStyle: TextStyle(
                                       fontSize: 12,
@@ -170,7 +170,7 @@ class _DmResultPageState extends State<DmResultPage> {
                                 ),
                                 Text(
                                   (d3 != null)?
-                                  d3.durationText: '33 mins',
+                                  d3.durationText: '0 mins',
                                   style: GoogleFonts.rubik(
                                     textStyle: TextStyle(
                                       fontSize: 12,
@@ -199,7 +199,7 @@ class _DmResultPageState extends State<DmResultPage> {
                             children: [
                               Text(
                                 (d4 != null)?
-                                d4.distanceText: '3.9 mi',
+                                d4.distanceText: '0 mi',
                                 style: GoogleFonts.rubik(
                                   textStyle: TextStyle(
                                     fontSize: 12,
@@ -210,7 +210,7 @@ class _DmResultPageState extends State<DmResultPage> {
                               ),
                               Text(
                                 (d4 != null)?
-                                d4.durationText: '23 mins',
+                                d4.durationText: '0 mins',
                                 style: GoogleFonts.rubik(
                                   textStyle: TextStyle(
                                     fontSize: 12,
@@ -267,7 +267,7 @@ class _DmResultPageState extends State<DmResultPage> {
                             children: [
                               Text(
                                 (d6 != null)?
-                                d6.distanceText: '4.1 mi',
+                                d6.distanceText: '0 mi',
                                 style: GoogleFonts.rubik(
                                   textStyle: TextStyle(
                                     fontSize: 12,
@@ -278,7 +278,7 @@ class _DmResultPageState extends State<DmResultPage> {
                               ),
                               Text(
                                 (d6 != null)?
-                                d6.durationText: '25 mins',
+                                d6.durationText: '0 mins',
                                 style: GoogleFonts.rubik(
                                   textStyle: TextStyle(
                                     fontSize: 12,
@@ -307,7 +307,7 @@ class _DmResultPageState extends State<DmResultPage> {
                             children: [
                               Text(
                                 (d7 != null)?
-                                d7.distanceText: '6.2 mi',
+                                d7.distanceText: '0 mi',
                                 style: GoogleFonts.rubik(
                                   textStyle: TextStyle(
                                     fontSize: 12,
@@ -318,7 +318,7 @@ class _DmResultPageState extends State<DmResultPage> {
                               ),
                               Text(
                                 (d7 != null)?
-                                d7.durationText: '32 mins',
+                                d7.durationText: '0 mins',
                                 style: GoogleFonts.rubik(
                                   textStyle: TextStyle(
                                     fontSize: 12,
@@ -341,7 +341,7 @@ class _DmResultPageState extends State<DmResultPage> {
                             children: [
                               Text(
                                 (d8 != null)?
-                                d8.distanceText: '4.4 mi',
+                                d8.distanceText: '0 mi',
                                 style: GoogleFonts.rubik(
                                   textStyle: TextStyle(
                                     fontSize: 12,
@@ -352,7 +352,7 @@ class _DmResultPageState extends State<DmResultPage> {
                               ),
                               Text(
                                 (d8 != null)?
-                                d8.durationText: '26 mins',
+                                d8.durationText: '0 mins',
                                 style: GoogleFonts.rubik(
                                   textStyle: TextStyle(
                                     fontSize: 12,
