@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:naksa/constants/constant_colors.dart';
+import 'package:naksa/screens/distanceMatrixResultPage.dart';
 import 'package:naksa/screens/distance_matrix_page.dart';
 import 'package:naksa/screens/map.dart';
 
-//Below is the code for the drawer which acts as a navigation bar.
 class DrawerNavigation extends StatefulWidget {
   @override
   _DrawerNavigationState createState() => _DrawerNavigationState();
@@ -166,7 +166,7 @@ class _DrawerNavigationState extends State<DrawerNavigation> {
                   color: bodyWhiteColor,
                 ),
                 onTap: () {
-                  Navigator.of(context).push(MaterialPageRoute(builder: (context)=>DistanceMatrixPage()));
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context)=>DmResultPage()));
                 },
               ),
               ListTile(
